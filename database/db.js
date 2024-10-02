@@ -3,7 +3,8 @@ const mongoose = require("mongoose");
 const connectToDb = () => {
   mongoose
     .connect(
-      "mongodb+srv://admin:admin@todolist.0ze51.mongodb.net/?retryWrites=true&w=majority&appName=todolist",
+      process.env.DB_URI,
+      
 
       
     )
